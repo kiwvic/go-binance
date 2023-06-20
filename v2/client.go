@@ -845,6 +845,11 @@ func (c *Client) NewUserUniversalTransferService() *CreateUserUniversalTransferS
 	return &CreateUserUniversalTransferService{c: c}
 }
 
+// NewListUserUniversalTransferService
+func (c *Client) NewListUserUniversalTransferService() *CreateListUserUniversalTransfer {
+	return &CreateListUserUniversalTransfer{c: c}
+}
+
 // NewAllCoinsInformation
 func (c *Client) NewGetAllCoinsInfoService() *GetAllCoinsInfoService {
 	return &GetAllCoinsInfoService{c: c}
